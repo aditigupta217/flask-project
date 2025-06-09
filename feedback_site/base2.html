@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>
+        {% block title %} My Feedback site {% endblock %}
+    </title>
+    <style>
+        body { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color: rgb(194, 151, 233); padding: 50px;}
+        header, footer { background: rgb(84, 55, 213); padding: 20px; color: aqua; text-align: center}
+
+        nav a {margin: 0 10px ; color: aquamarine; text-decoration: none;}
+        main {
+            background: whitesmoke; padding: 20px; margin: 5px ; border-radius: 5px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome this is feedback page </h1>
+        <nav>
+            <a href="/feedback">feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}  {% endblock %}
+    </main>
+
+    <footer>
+        <p>@2025, 9 june , by Aditi Gupta </p>
+    </footer>
+ 
+</body>
+</html>
