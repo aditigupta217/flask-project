@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title> 
+        {%block title%} My website {% endblock %}
+    </title>
+    <style>
+        body {font: Arial; padding: 20px;}
+        header { background: rgb(192, 226, 22); color:rgb(54, 36, 2); padding: 10px}
+        footer { background: rgb(206, 32, 32) ; padding: 30px; margin-top: 20px;}
+
+    </style>
+</head>
+<body>
+    <header>
+      <h2>My site</h2>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/product">Product</a>
+
+      </nav>
+    </header>
+
+    {% block content %}
+     {% endblock %}
+
+     <footer>
+        <p>@2025,june 8 , by Aditi Gupta </p>
+     </footer>
+</body>
+</html>

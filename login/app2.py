@@ -20,6 +20,7 @@ def submit():
     }
  
     if username in valid_user and password == valid_user[username]:
-        return render_template("welcome.html")
+        return render_template("welcome.html", name = username)
     else:
-        return "invalid"
+        return "invalid  page"
+    
